@@ -1,0 +1,162 @@
+/***************************************************************/
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+#Eventos-Anteriores {
+  text-align: center;
+ }
+/* pinto el icono de color blanco*/
+.icono {
+  display: block;
+  width: 30px;
+  -webkit-filter: grayscale(100%) invert(100%); /* Prefijo para navegadores WebKit como Safari y Chrome */
+  filter: grayscale(100%) invert(100%); /* Estándar sin prefijo */
+}
+/* el nav lo establezco a negro*/
+nav {
+  background-color: #030202;
+  position: fixed;
+  width: 100%;
+  height: max-content;
+  z-index: 1000;
+  padding: 20px;
+}
+
+nav ul {
+  display: flex;
+  
+  justify-content: left; /* Centra horizontalmente los elementos del menú */
+  align-items: center; /* Centra verticalmente los elementos del menú */
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  list-style: none;
+  margin-right: 20px;
+}
+
+nav ul li:last-child {
+  margin-right: 0; /* Elimina el margen derecho del último elemento para evitar espacio extra */
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+/********************fin nav*******************************/
+
+
+
+
+/* header foto del header*/
+/************************************************/
+.imagen1{
+width: 50%;
+position: relative;
+}
+
+
+.hero-container {
+  position: relative;
+  width: 100%;
+  height: 190px; /* Ajusta la altura según sea necesario */
+ overflow: hidden; /* Oculta cualquier contenido que desborde */
+  background-size: cover;
+}
+
+.hero-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Para que la imagen cubra el contenedor */
+}
+
+.text-overlay {
+  position: absolute; /* Posicionar el texto de manera absoluta */
+  top: 2%; /* Ajustar la posición desde la parte superior */
+  right: 10%; /* Ajustar la posición desde la derecha */
+  text-align: right; /* Alinear el texto a la derecha */
+  color: rgb(239, 233, 233);
+  width: 90%; /* Ajustar el ancho del texto */
+  max-width: 600px; /* Establecer un ancho máximo para evitar que el texto se extienda demasiado en pantallas anchas */
+  max-height: 600px;
+}
+
+
+/* primera  seccion*/
+/* seccion donde nos juntamos*/
+section {
+  display: block;
+  text-align: center;
+}
+
+/* eventos anteriores
+alineo cuadros de abajo*/
+section ul li {
+  list-style: none;
+  float: left;
+  padding: 20px;
+  text-align: center;
+}
+/***************************************************************/
+/* seccion preparacion proxima charla y fotos*/
+/* preparo contenedor*/
+.seccion2 {
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  color: white;
+
+  background-color: rgba(153, 56, 27, 0.946);
+}
+/* asigno tamaño a la foto*/
+
+/* ajustamos la imagen  de manera equitativa con el texto*/
+.foto {
+  width: 170px;
+}
+.img2 {
+  flex: 1;
+  display: flex;
+  align-items: normal;
+  justify-content: right;
+  text-align: left;
+}
+.text-container {
+  height: 200px;
+  flex: 1;
+  margin-left: 10px;
+  text-align: left;
+}
+/* fin  proxima charla ******************/
+
+.eAnteriores {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer {
+  background-color: black;
+  color: aliceblue;
+  width: 100%;
+  height: 150px;
+}
+footer ul {
+  align-items: center;
+}
+footer ul li {
+  align-items: center;
+  list-style: none;
+  /*float: left;*/
+  padding: 10px;
+  text-align: center;
+}
+#ifo {
+  margin-left: 25px;
+}
